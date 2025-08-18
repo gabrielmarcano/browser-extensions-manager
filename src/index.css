@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-noto-sans: 'Noto Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-light-100: #eef8f9;
+  --color-light-0: #ebf2fc;
+
+  --color-dark-100: #091540;
+  --color-dark-0: #040918;
+
+  --color-nred-400: hsl(3, 86%, 64%);
+  --color-nred-500: hsl(3, 71%, 56%);
+  --color-nred-700: hsl(3, 77%, 44%);
+
+  --color-neutral-900: hsl(227, 75%, 14%);
+  --color-neutral-800: hsl(226, 25%, 17%);
+  --color-neutral-700: hsl(225, 23%, 24%);
+  --color-neutral-600: hsl(226, 11%, 37%);
+  --color-neutral-300: hsl(0, 0%, 78%);
+  --color-neutral-200: hsl(217, 61%, 90%);
+  --color-neutral-100: hsl(0, 0%, 93%);
+  --color-neutral-0: hsl(200, 60%, 99%);
+}
+
+/* Variable font (regular and italic) */
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./assets/fonts/NotoSans-VariableFont_wdth,wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
